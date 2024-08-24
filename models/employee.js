@@ -6,4 +6,4 @@ const Employee = mongoose.model('Employee',{
     dept: {type: String}
 });
 
-module.export = Employee;
+module.exports = Employee;

@@ -12,9 +12,9 @@
 
 // module.exports = mongoose;
 //////////////////////////////////////////////////
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://localhost:27017/meanDB";
+const mongoURI = 'mongodb://localhost:27017/meanDB';
 
 mongoose
   .connect(mongoURI)
@@ -24,3 +24,5 @@ mongoose
   .catch((err) => {
     console.error("Error connecting to MongoDB: " + err.message);
   });
+
+module.exports = mongoose;
